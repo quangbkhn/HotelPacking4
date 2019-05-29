@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation_grap" app:startDestination="@id/destination_home">
+
+    <fragment android:id="@+id/destination_home" android:name="com.example.quang.hotelpacking.Fragments.Home_fragment"
+              android:label="home_fragment" tools:layout="@layout/home_fragment"/>
+    <fragment android:id="@+id/destination_sign" android:name="com.example.quang.hotelpacking.Fragments.Sign_fragment"
+              android:label="sign_fragment" tools:layout="@layout/sign_fragment">
+        <action android:id="@+id/next_action_user" app:destination="@id/destination_user"/>
+        <action android:id="@+id/next_action_list" app:destination="@id/destination_list"/>
+    </fragment>
+    <fragment android:id="@+id/destination_list" android:name="com.example.quang.hotelpacking.Fragments.List_fragment"
+              android:label="list_fragment" tools:layout="@layout/list_fragment"/>
+    <fragment android:id="@+id/destination_user" android:name="com.example.quang.hotelpacking.Fragments.User_fragment"
+              android:label="user_fragment" tools:layout="@layout/user_fragment"/>
+</navigation>

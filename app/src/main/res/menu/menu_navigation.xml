@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="USER" android:id="@+id/destination_user" android:icon="@android:drawable/ic_menu_myplaces"/>
+    <item android:title="LIST" android:id="@+id/destination_list" android:icon="@android:drawable/ic_dialog_dialer"/>
+    <item android:title="SIGN IN" android:id="@+id/destination_sign" android:icon="@android:drawable/arrow_up_float"/>
+    <item android:title="HOME" android:id="@+id/destination_home" android:icon="@android:drawable/btn_star_big_off"/>
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragments.Sign_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:text="SIGN IN"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:id="@+id/title_home" android:layout_marginTop="40dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:textSize="24sp" android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_light"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="USER"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_user" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                android:layout_marginEnd="8dp" android:textSize="18sp" android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_light" app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline4"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="125dp"
+                android:id="@+id/guideline2"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="140dp"
+                android:id="@+id/guideline3"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtxt_user" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4" android:hint="Name"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="186dp"
+                android:id="@+id/guideline4"/>
+        <TextView
+                android:text="PASSWORD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_password" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline4" app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                android:layout_marginEnd="8dp" android:textSize="18sp" android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_light" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.723"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/edtxt_password" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="@+id/guideline4"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5" app:layout_constraintVertical_bias="0.27"
+                android:hint="Password"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="267dp"
+                android:id="@+id/guideline5"/>
+        <Button
+                android:text="submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_submit" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:textSize="18sp" android:textColor="@android:color/holo_blue_light"
+        />
+        <TextView
+                android:text="Yêu cầu bạn đăng nhập tài khoản đã được cấp. Nếu quên hoặc mất tài khoản bạn có thể liên hệ với khách sạn"
+                android:layout_width="0dp"
+                android:layout_height="127dp"
+                android:id="@+id/txt_com" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/bt_submit" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:textAlignment="center" android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
